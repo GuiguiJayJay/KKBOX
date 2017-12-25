@@ -113,7 +113,7 @@ the songs and users datasets (beware, it is really long so do it once)
 ## The files
 - `kkbox.py`: the main script.
 - `preproc.py`: the script containing the functions to preprocess the data from first stage (cleaning) to last step (binary encoding).
-- `settings.py`: the script containing the main options (such as perform the trianing or load weights, write intermediate files to disk or read them etc...)
+- `settings.py`: the script containing the main options (such as perform the training or load weights, write intermediate files to disk or read them etc...)
 This script also caintains the global variables declaration.
 - `utils.py`: a script containing various utilities functions, such as the binary encoding algorithm, the batch builder etc...
 - `models.py`: script containing the models used. All the tensorflow parts of the code can be found therein.
