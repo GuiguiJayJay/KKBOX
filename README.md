@@ -55,7 +55,7 @@ one less hidden layer will result in a much higher number of parameters, and a m
 Still, it scores even more badly than the previous one. Alex Karpathy mentionned in his CNN lessons that usually,
 deeper is better than wider. In this case, it seems also to be true for a DNN.
 
-### Batchsize
+### Mini-batch size
 Yes I tried differnet batchsize also! The higher the batchsize, the faster the code runs, obvious. But I also noticed
 that the results improves at some point with batchsize, up to around 10. I think it is if you treat each pair from the 
 train set one by one, weights are updated on a too small scope of the data, thus pushing them in a very particular direction.
