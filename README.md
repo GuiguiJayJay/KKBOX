@@ -56,8 +56,8 @@ Still, it scores even more badly than the previous one. Alex Karpathy mentionned
 deeper is better than wider. In this case, it seems also to be true for a DNN.
 
 ### Mini-batch size
-The higher the batchsize, the faster the code runs, obvious. But I also noticed
-that the results improves at some point with batchsize, up to around 10. I think it is if you treat each pair from the 
+The higher the batchsize, the faster the code runs, obvious. But I also noticed that the results improves at some point with batchsize, 
+up to around 10. I think it is if you treat each pair from the 
 train set one by one, weights are updated on a too small scope of the data, thus pushing them in a very particular direction.
 Using bigger batchsize will update weights to an overall direction which corresponds better to the most proeminent trends 
 in the data (sacrificing particular cases, which we don't really care given our problem and the final result we had anyway).
