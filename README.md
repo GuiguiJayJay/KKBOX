@@ -97,8 +97,8 @@ I created this script using:
 
 
 ## Usage
-Execute the main script, `kkbox.py` to run whatever work you want after setting some options There are 3 main places
-to look at to tweak the model:
+Execute the main script, `kkbox.py` to run what you want after setting some options. There are 3 main places
+to look at in order to tweak the model/training:
 - `kklib\models.py`: change the architecture of the neural networks here.
 - `kklib\settings.py`: change the options for the execution. You can run:
     - the preprocessing or not (if the files are already saved)
@@ -109,6 +109,14 @@ the songs and users datasets (beware, it is really long so do it once)
     - wether you should train the Auto-Encoder and/or the DNN or read weights from disk
 - `kkbox.py`: change the training parameters when calling the `NN_model` function (initial learning rate, batchsize, etc...)
 
+
+## The files
+- `kkbox.py`: the main script.
+- `preproc.py`: the script containing the functions to preprocess the data from first stage (cleaning) to last step (binary encoding).
+- `settings.py`: the script containing the main options (such as perform the trianing or load weights, write intermediate files to disk or read them etc...)
+This script also caintains the global variables declaration.
+- `utils.py`: a script containing various utilities functions, such as the binary encoding algorithm, the batch builder etc...
+- `models.py`: script containing the models used. All the tensorflow parts of the code can be found therein.
 
 
 
