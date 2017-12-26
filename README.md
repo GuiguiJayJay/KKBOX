@@ -82,7 +82,7 @@ it.
 ### About the result
 In this precise case, the DNN fails to read combinations of features unfortunately. It needs some guidance to go
 to the right direction, either by introducing more explicit features, either by training it differently (pre-training
-some parts alone typically). The problem is we try to make it read too precise combinations instead of asking him to 
+and carefully initializing weights typically). The problem is we try to make it read too precise combinations instead of asking him to 
 extract hidden features. I still think it is possible, but much more work is required to have just a decent result here.
 There are much more efficient models to deal with this kind of problems anyway (Factorization Machines for example), but the 
 experience was very instructive!
